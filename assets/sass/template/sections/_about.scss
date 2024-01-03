@@ -74,13 +74,18 @@
 
     .img5 {
         position: absolute;
-        right: 0;
+        right: 0 !important;
         bottom: -22%;
 
         @include lg {
-            right: 10%;
+            right: 10% !important;
             bottom: -10%;
         }
+
+        // @include sm{
+        //     right: 20%;
+        //     bottom: -10%;
+        // }
 
         @include xs {
             display: none;
@@ -90,6 +95,8 @@
             border-radius: 0 0 100px 0;
         }
     }
+
+    
 
     .about-shape {
         position: absolute;
@@ -1134,7 +1141,6 @@
     }
 }
 
-.about-card {}
 
 
 .sec-text2 {
